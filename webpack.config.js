@@ -5,6 +5,7 @@ var webpack = require('webpack');
 module.exports = {
     entry: './src/main.jsx',
     output: { path: path.join(__dirname, 'dist'), filename: 'bundle.js' },
+    devtool: 'inline-source-map',
     module: {
         loaders: [
             {
